@@ -8,7 +8,7 @@ import numpy as np
 from shapely.geometry import MultiPolygon, Polygon, Point
 from geopandas import GeoDataFrame, pd
 import matplotlib as mlt
-if not matplotlib.get_backend():
+if not mlt.get_backend():
     mlt.use('TkAgg')
 import mlt.pyplot as plt
 from mlt.mlab import griddata
