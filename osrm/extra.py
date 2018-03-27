@@ -7,11 +7,11 @@ from . import RequestConfig, Point as _Point
 import numpy as np
 from shapely.geometry import MultiPolygon, Polygon, Point
 from geopandas import GeoDataFrame, pd
-import matplotlib
+import matplotlib as mlt
 if not matplotlib.get_backend():
-    matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-from matplotlib.mlab import griddata
+    mlt.use('TkAgg')
+import mlt.pyplot as plt
+from mlt.mlab import griddata
 
 
 def contour_poly(gdf, field_name, n_class):
