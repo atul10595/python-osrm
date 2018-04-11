@@ -3,5 +3,6 @@ GDAL
 numpy
 pandas
 shapely
+requests
 geopandas
 matplotlib
